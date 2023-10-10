@@ -1,0 +1,5 @@
+Computer Name: 4LAP104500JLH
+Date of Test: 2023-10-10 17:20:03
+Bubble Sort Time: 13.187571 seconds
+Quick Sort Time: 0.019813 seconds
+
