@@ -1,15 +1,20 @@
-def sort_1(arr):
+def sort_1(array):
     """bubble_sort"""
-    n = len(arr)
-        
-    for i in range(n):
-        # Letzte i Elemente sind bereits sortiert
-        for j in range(0, n-i-1):
-            # Durchlaufe das Array von 0 bis n-i-1
-            # Swap, wenn das Element größer ist als das nächste
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+    n = len(array)
+    # loop to access each array element
+    for i in range(len(array)):
 
-        return arr
+        # loop to compare array elements
+        for j in range(0, len(array) - i - 1):
 
-#print(sort_1([12,3,4,5]))
+            # compare two adjacent elements
+            # change > to < to sort in descending order
+            if array[j] > array[j + 1]:
+
+                # swapping elements if elements
+                # are not in the intended order
+                temp = array[j]
+                array[j] = array[j+1]
+                array[j+1] = temp
+
+    return array
