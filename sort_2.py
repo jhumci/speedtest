@@ -10,5 +10,5 @@ def sort_2(arr):
     
     return sort_2(left) + middle + sort_2(right)
 
-#print(sort_2([3,41,4, 5]))
+#print(sort_2([3,41,4, 5]))!
 
